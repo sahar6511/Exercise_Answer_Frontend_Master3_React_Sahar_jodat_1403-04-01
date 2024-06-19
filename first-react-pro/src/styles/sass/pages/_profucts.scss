@@ -1,0 +1,46 @@
+.products-container{
+    @include flex-center;
+    border: 1px solid #ccc;
+    width: 90%;
+    padding: 20px;
+    margin: 0 auto;
+    gap: 15px;
+    opacity: 1;
+    visibility: hidden;
+    transition: "all .3s cubic-bezier(0.7,-0.5,0.3,1.5 )"
+}
+.active{
+    visibility: visible;
+}
+.header{
+    margin: 0 auto;
+    width: 90%;
+    height: 50px;
+    background-color: blue;
+    margin-top: 20px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    @include flex-center;
+    color: #fff;
+    cursor: pointer;
+    p{
+        padding-left: 20px; 
+    }
+    div{
+        padding-right: 20px; 
+
+    }
+}
+.header-after-click{
+    background-color: #ccc;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    color: black;
+    i{
+        transform: rotate(180deg);
+    }
+}
+.hide{
+    display: none;
+}
+

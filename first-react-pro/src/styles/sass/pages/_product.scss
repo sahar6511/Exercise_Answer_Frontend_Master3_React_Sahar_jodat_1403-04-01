@@ -1,0 +1,22 @@
+.product-box{
+    @include flex-center;
+    flex-direction: column;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    width: 25%;
+    padding: 20px;
+    gap: 10px;
+    min-height: 400px;
+    transition: all .3s ease-in;
+    img{
+        width: 80%;
+        border-radius: 5px;
+        padding-top: 10px;
+    }
+    h2{
+        background-color: yellow;
+    }
+    i{
+        cursor: pointer;
+    } 
+}
